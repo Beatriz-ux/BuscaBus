@@ -1,0 +1,81 @@
+.tabela {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 5px;
+}
+.cabecalho {
+  display: flex;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    186deg,
+    rgb(98, 172, 163),
+    rgba(73, 127, 121, 1) 90%
+  );
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  position: sticky;
+  top: 0;
+}
+.cabecalho div {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cabecalho div:nth-child(1) {
+  flex: 0.5;
+}
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  background-color: #eee;
+}
+
+.linha {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0px 1px 3px #ccc;
+  border-bottom: 1px solid #00000020;
+}
+
+.linha div {
+  flex: 1;
+}
+.linha div:nth-child(1) {
+  flex: 0.5;
+}
+.linha div p {
+  --lines: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: var(--lines);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+}
+
+.linha[data-outdated="true"] {
+  opacity: 0.3;
+  position: relative;
+}
+
+.linha[data-outdated="true"]::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 1px;
+  background-color: #0008;
+  z-index: 1;
+
+  /* display: none; */
+}
