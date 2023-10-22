@@ -1,0 +1,23 @@
+.filtro{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+    gap:1rem;
+}
+.filtro input{
+    display: none;
+
+    
+}
+.filtro input:checked~label,
+.filtro label[data-checked="true"]{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.filtro label{
+    display: flex;
+    padding: 0.5rem 1rem;
+    border-radius:1rem;
+    border: 1px solid var(--primary-color);
+
+}
