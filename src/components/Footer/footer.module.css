@@ -1,0 +1,22 @@
+@keyframes moveColors {
+     0%{
+      color: rgb(255, 213, 0);
+    }
+    100%{
+      color:  rgb(220, 184, 2);
+      
+    }
+  }
+.footer{
+    background-color: #7a9f9a;
+    width: 100%;
+    padding: 10px 0px;
+    color:var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer a{
+    animation: moveColors 0.5s linear infinite;   
+}
