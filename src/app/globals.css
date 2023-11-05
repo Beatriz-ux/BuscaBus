@@ -1,10 +1,10 @@
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --primary-color: #497f79;
+  --primary-color: #497;
   --text-color: #444;
-  --background-color-1:#f4f4f4;
-  --background-color-2:#e0e0e0;
+  --background-color-1:#161716;
+  --background-color-2:#108456;
   --font-size-p: 1.5rem;
   
 }
@@ -23,11 +23,12 @@ body {
 
 body {
   color: var(--text-color);
-  background: linear-gradient(
-    135deg,
-      var(--background-color-1),
-      var(--background-color-2)
-    )
+  background: radial-gradient(
+    circle at center center,
+    var(--background-color-2) 0%,
+    var(--background-color-1) 95%
+  
+  );
 }
 
 a {
