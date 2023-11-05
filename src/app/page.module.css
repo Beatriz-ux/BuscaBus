@@ -8,5 +8,5 @@
 }
 .main .container >span{
   color: var(--text-color);
-  opacity: 0.4;
+  opacity: 0.8;
 }
