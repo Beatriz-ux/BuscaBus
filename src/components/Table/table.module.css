@@ -66,16 +66,4 @@
   position: relative;
 }
 
-.linha[data-outdated="true"]::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
-  height: 1px;
-  background-color: #0008;
-  z-index: 1;
 
-  /* display: none; */
-}
