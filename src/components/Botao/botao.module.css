@@ -3,6 +3,7 @@
     justify-content: center;
     margin: 1rem 0;
     gap:1rem;
+    color:#fff;
 }
 .filtro input{
     display: none;
@@ -19,5 +20,7 @@
     padding: 0.5rem 1rem;
     border-radius:1rem;
     border: 1px solid var(--primary-color);
+    cursor: pointer;
+
 
 }
